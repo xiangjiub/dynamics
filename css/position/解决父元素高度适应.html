@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <style>
+        .container {
+            width: 300px;
+            height: auto;
+            background: rgb(54, 181, 219);
+            position: relative;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            border: 2px solid rgb(247, 129, 129);
+            position:absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="box" id="box"></div>
+    </div>
+    <script>
+        var box = document.getElementById("box").offsetHeight;
+        document.getElementById("container").style.height=box;
+        console.log("🚀 ~ file: 1.html ~ line 28 ~ box", box)
+        
+    </script>
+</body>
+
+</html>

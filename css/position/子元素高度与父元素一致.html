@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<meta charset="UTF-8">
+	<title>子元素高度与父元素一致</title>
+	<style>
+
+		.parent{
+			position: relative;
+			background: #f89;
+
+			width: 800px;
+			color: #fff;
+			font-family: "Microsoft Yahei";
+			text-align: center;
+		}
+		.left {
+			min-height: 700px;
+			width: 600px;
+
+		}
+		.right {
+			width: 200px;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+
+			background: #ccc;
+			
+		}
+	</style>
+</head>
+<body>
+	<div class="parent">
+		<div class="left">
+			左侧 left 不定高,parent的高度随着左侧left 的高度变化而变化，右侧也跟着变
+		</div>
+		<div class="right">
+			这边的高度跟父元素高度一致
+		</div>
+	</div>
+</body>
+</html>
